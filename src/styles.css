@@ -1,0 +1,231 @@
+body {
+    margin: 0px;
+}
+
+h2 {
+    color: whitesmoke;
+
+}
+
+ul {
+    padding-left: 1em;
+    margin-right: 1em;
+}
+
+.myDayList {
+    padding-top: 1em;
+}
+
+li {
+    display: flex;
+    color: whitesmoke;
+    list-style: none;
+    font-size: 18px;
+    cursor: pointer;
+    align-content: center;
+    padding-left: 1em;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    border-radius: 15px;    
+}
+
+.complete {
+    text-decoration: line-through;
+}
+
+li > div {
+    width: 50%;
+}
+
+.prio {
+    color: yellow;
+}
+
+.interaction {
+    display: flex;
+    width: 50%;
+    justify-content: end;
+}
+
+.removeButtton {
+    border-radius: 15px;
+    background-color: rgb(105, 105, 105);
+}
+
+.selected {
+    background-color: grey;
+    margin-right: 1em;
+}
+
+
+ul>div {
+    display: flex;
+    align-self: center;
+    border: 1px solid white;
+    border-radius: 25px;
+    margin-bottom: 1em;
+}
+
+
+
+.frame {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    width: 100%;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: rgba(0, 0, 0, 0.877);
+    color: whitesmoke;
+}
+
+.sideList>h2 {
+    text-decoration: underline;
+}
+
+.sideList>li {
+    list-style: none;
+    margin-bottom: 1em;
+}
+
+.sideList>li>button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgb(214, 214, 214);
+    font-size: medium;
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0.76);
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.438);
+    color: whitesmoke;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    width: 20%;
+    border-radius: 20px;
+    justify-content: start;
+    padding-left: 1em;
+
+
+}
+
+.mainArea {
+    display: flex;
+    gap: 1em;
+    flex: 1;
+}
+
+.allTasksContainer,
+.taskDetails,
+.myDay,
+.week,
+.taskTypeContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.438);
+    padding-left: 1em;
+    margin-left: 1em;
+    width: 28%;
+    height: 90%;
+    border-radius: 20px;
+
+}
+
+.addDiv {
+    margin-top: auto;
+    padding-left: 0px;
+    height: 5%;
+    padding-right: 1em;
+}
+
+.addTask {
+    display: flex;
+    justify-items: start;
+    align-items: center;
+    width: 100%;
+    height: 3em;
+    line-height: 3em;
+    background: none;
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+    cursor: text;
+    font-size: 14px;
+    resize: none;
+}
+
+.taskDetails {
+    gap: 2em;
+}
+
+.taskDetails>textarea,
+.taskDetails> div >input,
+.taskDetails>div >button {
+    background-color: rgba(0, 0, 0, 0);
+    color: whitesmoke;
+}
+
+.taskDetails>textarea {
+    height: 10%;
+    resize: none;
+    margin-right: 1em;
+}
+
+.taskDetails>div {
+    display: flex;
+    color: whitesmoke ;
+    justify-content: center;
+}
+
+
+
+.taskDetails > input {
+    display: flex;
+    justify-self: center;
+    width: 10em;
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+}
+
+.buttonContainer, .buttonGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25em;
+}
+
+.completed, .priority {
+    width:6em;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.dateContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.dateContainer > input {
+    justify-items: center;
+}
+
+.taskType {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
